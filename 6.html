@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI 6</title>
+    <style>
+         .exercises {
+            margin-bottom: 20px;
+        }
+
+        .exercises a {
+            text-decoration: none;
+            color: rgb(208, 44, 55);
+            font-weight: bold;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: color 0.3s;
+        }
+
+        .exercises a:hover {
+            text-decoration: underline;
+        }
+
+        .exercises a:visited {
+            color: red;  
+        }
+
+        .exercises a:active {
+            color: green; 
+        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background: yellow;
+    height: 160px;
+    line-height: 100px;
+}
+
+.menu {
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    float: left;
+    font-size: small;
+}
+
+.menu ul li  {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.content {
+    width: 70%;
+    float: left;
+    padding-top: 10px;
+    height: 500px;
+}
+
+.content h2 {
+    color: red;
+}
+
+.content img {
+    width: 300px;
+    display: block;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    height:500px;
+    float: right;
+    padding: 20px;
+    background-color: green;
+}
+
+.right-top, .right-left, .right-right {
+    background: green;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.right-left, .right-right {
+    width: 48%;
+    float: left;
+    height: 150px;
+}
+
+.right-right {
+    float: right;
+}
+  </style>
+</head>
+<body>
+    <div class="exercises">
+        <a href="1.html">Bài 1</a> 
+        <a href="2.html">Bài 2</a> 
+        <a href="3.html">Bài 3</a> 
+        <a href="4.html">Bài 4</a>
+        <a href="5.html">Bài 5</a>
+        <a href="6.html">Bài 6</a>
+    </div>
+
+    <div class="header"></div>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Feedback</li>
+            <li>FAQs</li>
+            <li>My Account</li>
+        </ul>
+        <ul>
+            <li>English</li>
+            <li>Tiếng Việt</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>TRANG CHỦ</h2>
+        <img src="dh.jpeg">
+    </div>
+    <div class="sidebar">
+        <div class="right-top">RIGHT-TOP</div>
+        <div class="right-left">RIGHT-LEFT</div>
+        <div class="right-right">RIGHT-RIGHT</div>
+    </div>
+</body>
+</html>

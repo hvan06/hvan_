@@ -3,23 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="exercises">
-        <a href="1.html">Bài 1</a> 
-        <a href="2.html">Bài 2</a> 
-        <a href="3.html">Bài 3</a> 
-        <a href="4.html">Bài 4</a>
-    </div>
-    <style> 
-     .exercises {
+    <title>BTVN</title>
+    <style>
+         .exercises {
             margin-bottom: 20px;
         }
 
         .exercises a {
             text-decoration: none;
-            color: blue;
+            color: rgb(208, 44, 55);
             font-weight: bold;
             padding: 5px 10px;
             margin-right: 10px;
@@ -38,32 +30,90 @@
         .exercises a:active {
             color: green; 
         }
-
-        .box1{
-            height: 100px;
-            width: 100px;
-            border-style: solid;
-            border-width: 5px;
-            background-color: orangered;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .box2{
-            height: 100px;
-            width: 100px;
-            border-style: solid;
-            border-width: 5px;
-            background-color: rgb(215, 62, 16);
-            margin-left:108px;}
-            .box3{
-            height: 100px;
-            width: 100px;
-            border-style: solid;
-            border-width: 5px;
-            background-color: orangered;
-            border-color: rgb(107, 198, 17);
-            margin-left: 217px;}
+        
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .left-box {
+            width: 40%;
+        }
+
+        .right-box {
+            width: 60%;
+        }
+
+        .box1 {
+            padding: 20px;
+            margin-top: 10px;
+            color: azure;
+            background-color: rgb(40, 37, 216);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .box2, .box3, .box4, .box5 {
+            background-color: rgb(42, 120, 221);
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            margin: 10px 0;
+            display: block;
+            border-radius: 5px;
+            color: azure;
+            
+        }
+
+        .box6 {
+            background: blue;
+            color: azure;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            background: whitesmoke;
+        }
     </style>
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
+</head>
+<body>
+    <div class="exercises">
+        <a href="1.html">Bài 1</a> 
+        <a href="2.html">Bài 2</a> 
+        <a href="3.html">Bài 3</a> 
+        <a href="4.html">Bài 4</a>
+        <a href="5.html">Bài 5</a>
+        <a href="6.html">Bài 6</a>
+    </div>
+    <div class="box1">Chania</div>
+
+    <div class="container"> 
+        <div class="left-box">
+            <div class="box2">The Flight</div> 
+            <div class="box3">The City</div>
+            <div class="box4">The Island</div>
+            <div class="box5">The Food</div>
+        </div>
+        <div class="right-box content">
+            <h2>The City</h2>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias accusamus suscipit totam ipsum rem, voluptas quidem incidunt harum exercitationem nesciunt temporibus voluptate laborum dignissimos laboriosam dolor!</p>
+        </div>
+    </div>
+
+    <div class="box6">Footer Text</div>
+
 </body>
 </html>
