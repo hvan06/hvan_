@@ -26,21 +26,45 @@
         .exercises a:active {
             color: green; 
         }
-.grid{
+        .grid{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 100px auto 50px;
-            background-color: rgb(49, 168, 122);
-            color: aliceblue;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,60px);
+            row-gap: 5px;
+            column-gap: 8px;
+        }
+        .grid div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
             font-weight: bold;
         }
-        .grid .box1, .grid .box2, .grid .box3, .grid .box4, .grid .box6{
-            display: flex;
-            justify-content: center;}
-        .grid .box7, .grid .box8, .grid .box9{
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
+        .head{
+            background-color: #76787b;
+            grid-column: 1/4;
+        }
+        .hero{
+            background-color: rgb(222, 87, 165);
+            grid-column: 1/4;
+        }
+        .dv1{
+            background-color: rgb(120, 100, 36);
+            grid-column: 1/2;
+            margin-left: 5px;
+        }
+        .dv2{
+            background-color: rgb(120, 100, 36);
+            grid-column: 2/3;
+        }
+        .dv3{
+            background-color: rgb(120, 100, 36);
+            grid-column: 3/4;
+            margin-right: 5px;
+        }
+        .footer{
+            background-color: #76787b;
+            grid-column: 1/4;
         }
         </style>
 </head>
@@ -56,16 +80,15 @@
         <a href="9.html">Bài 9</a>
         <a href="10.html">Bài 10</a>
     </div>
+ 
     <div class="grid">
-        <div class="box1">1</div>
-        <div class="box2">2</div>
-        <div class="box3">3</div>
-        <div class="box4">4</div>
-        <div class="box5">5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi a tenetur voluptatibus delectus culpa laudantium accusantium commodi tempore veritatis temporibus quis minus inventore debitis amet, doloremque distinctio sit non!</div>
-        <div class="box6">6</div>
-        <div class="box7">7</div>
-        <div class="box8">8</div>
-        <div class="box9">9</div>
+        <div class="head">Header</div>
+        <div class="hero">hero</div>
+        <div class="dv1 ">dịch vụ 1</div>
+        <div class="dv2 ">dịch vụ 2</div>
+        <div class="dv3 ">dịch vụ 3</div>
+        <div class="footer">footer</div>
     </div>
 </body>
 </html>
+ 
