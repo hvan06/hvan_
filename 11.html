@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTVNcuahvan</title>
+  <style>
+* {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.exercises {
+            margin-bottom: 20px;
+        }
+        .exercises a {
+            text-decoration: none;
+            color: rgb(46, 194, 100);
+            font-weight: bold;
+            padding: 2px 10px;
+            margin-right: 1px;
+            border-radius: 5px;
+            transition: color 0.3s;
+        }
+        .exercises a:hover {
+            text-decoration: underline;
+        }
+        .exercises a:visited {
+            color: red;  
+        }
+        .exercises a:active {
+            color: green; 
+        }
+ 
+.container {
+  background-color: #333;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.menu li a:hover {
+  background-color: #111;
+}
+
+ 
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+@media (max-width:600px){
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .menu{
+            flex-direction: column;
+            width: 100%;
+    }
+    .menu-icon{
+            display: block;
+            text-align: right;
+            padding: 4px;
+        }
+    .menu li a {
+        padding: 14px;
+        border-top: 1px colid #444;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="exercises">
+        <a href="11.html">Bài 11</a> 
+        <a href="12.html">Bài 12</a> 
+        <a href="13.html">Bài 13</a> 
+        <a href="14.html">Bài 14</a> 
+    </div>
+  <div class="container">
+    <div class="menu-icon">☰</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

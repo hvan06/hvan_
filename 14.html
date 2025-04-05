@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .exercises {
+            margin-bottom: 20px;
+        }
+        .exercises a {
+            text-decoration: none;
+            color: rgb(46, 194, 100);
+            font-weight: bold;
+            padding: 2px 10px;
+            margin-right: 1px;
+            border-radius: 5px;
+            transition: color 0.3s;
+        }
+        .exercises a:hover {
+            text-decoration: underline;
+        }
+        .exercises a:visited {
+            color: red;  
+        }
+        .exercises a:active {
+            color: green; 
+        }
+        .grid{
+            display: grid;
+            grid-template-rows:auto;
+            grid-template-columns: 1fr 3fr 3fr 1fr;
+            grid-template-areas:
+            "header header  header header"
+            "aside1   content content aside2"   
+            "footer footer  footer footer" ;
+        }
+        .head{
+            background-color: rgb(232, 223, 87);
+            grid-area: header;
+            padding: 20px;
+        }
+        .aside1{
+            background-color: rgb(132, 206, 229);
+            grid-area: aside1;
+           
+        }
+        .content {
+      background-color: #ffe6d1;
+      grid-area: content;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+        .aside2{
+            background-color: rgb(132, 206, 229);
+            grid-area: aside2;
+             
+        }
+        .footer{
+            background-color: rgb(191, 152, 67);
+            grid-area: footer;
+            padding: 20px;
+        }
+        .grid div{
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+      background-color: #ffe6d1;
+      grid-area: content;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+        @media (max-width: 600px) {
+            .grid{
+            grid-template-rows:auto;
+            grid-template-areas:
+            "header"
+            "content"
+            "aside1" 
+            "aside2"
+            "footer"    
+            }
+            .body{
+            font-size: 20px;
+        }
+        }
+         </style>
+</head>
+<body>
+    <div class="exercises">
+        <a href="11.html">Bài 11</a> 
+        <a href="12.html">Bài 12</a> 
+        <a href="13.html">Bài 13</a> 
+        <a href="14.html">Bài 14</a> 
+    </div>
+ 
+    <div class="grid">
+        <div class="head">Header</div>
+        <div class="aside1">Aside1</div>
+        <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ratione error expedita aut id commodi exercitationem debitis repellendus? Ducimus accusantium suscipit dolore ullam eos ipsam! Distinctio omnis excepturi doloribus fugiat molestiae quasi, 
+                doloremque necessitatibus quisquam voluptatem ipsa nulla iure optio, exercitationem facilis in. 
+                Dignissimos eveniet vel aperiam rem enim accusantium.</p>
+                <img src="IMG_5834.JPG" style="display: block; margin-top: 10px; max-width: 100%;">
+
+            </div>
+        <div class="aside2 ">Aside2</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
+ 

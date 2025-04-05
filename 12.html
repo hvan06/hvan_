@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .exercises {
+            margin-bottom: 20px;
+        }
+        .exercises a {
+            text-decoration: none;
+            color: rgb(46, 194, 100);
+            font-weight: bold;
+            padding: 2px 10px;
+            margin-right: 1px;
+            border-radius: 5px;
+            transition: color 0.3s;
+        }
+        .exercises a:hover {
+            text-decoration: underline;
+        }
+        .exercises a:visited {
+            color: red;  
+        }
+        .exercises a:active {
+            color: green; 
+        }
+    .container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-content {
+      padding: 10px;
+      font-size: 1rem;  
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .live-btn {
+      background-color: pink;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    @media (max-width: 1000px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card-content {
+        font-size: 1rem;  
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .card-content {
+        font-size: 14px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .card-content {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="exercises">
+        <a href="11.html">Bài 11</a> 
+        <a href="12.html">Bài 12</a> 
+        <a href="13.html">Bài 13</a> 
+        <a href="14.html">Bài 14</a> 
+    </div>
+  <div class="container">
+    
+    <div class="card">
+        <img src="IMG_5834.JPG">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!
+      </div>
+      <div class="card-footer">
+        <button class="live-btn">Live</button>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+    
+    <div class="card">
+        <img src="IMG_5834.JPG">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!
+      </div>
+      <div class="card-footer">
+        <button class="live-btn">Live</button>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+    
+    <div class="card">
+        <img src="IMG_5834.JPG">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!
+      </div>
+      <div class="card-footer">
+        <button class="live-btn">Live</button>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+     
+    <div class="card">
+      <img src="IMG_5834.JPG">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis!
+      </div>
+      <div class="card-footer">
+        <button class="live-btn">Live</button>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
