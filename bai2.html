@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài 2</title>
+</head>
+<body>
+    <div>
+        <a href="bai1.html">Bài 1</a> 
+        <a href="bai2.html">Bài 2</a> 
+        <a href="bai3.html">Bài 3</a> 
+        <a href="bai4.html">Bài 4</a>
+        <a href="bai5.html">Bài 5</a>
+        <a href="bai6.html">Bài 6</a>
+        <a href="bai7.html">Bài 7</a>
+        <a href="bai8.html">Bài 8</a>
+        </div>
+        <div>
+  <input type="number" id="nam" placeholder="Nhập năm">
+  <button onclick="kiemTraNamNhuan()">Kiểm tra</button>
+  <p id="nhuan"></p>
+            </div>
+  <script>
+    function kiemTraNamNhuan() {
+      let nam = parseInt(document.getElementById("nam").value);
+      let laNhuan = (nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0);
+      document.getElementById("nhuan").innerText = laNhuan ? "Năm nhuận" : "Không phải năm nhuận";
+    }
+  </script>
+</body>
+</html>

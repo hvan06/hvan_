@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài 1</title>
+</head>
+<body>
+    <div>
+        <a href="bai1.html">Bài 1</a> 
+        <a href="bai2.html">Bài 2</a> 
+        <a href="bai3.html">Bài 3</a> 
+        <a href="bai4.html">Bài 4</a>
+        <a href="bai5.html">Bài 5</a>
+        <a href="bai6.html">Bài 6</a>
+        <a href="bai7.html">Bài 7</a>
+        <a href="bai8.html">Bài 8</a>
+        </div>
+        <div>
+  <input type="number" id="diem" placeholder="Nhập điểm TB">
+  <button onclick="xepLoai()">Xếp loại</button>
+  <p id="loai"></p>
+        </div>
+  <script>
+    function xepLoai() {
+      let diem = parseFloat(document.getElementById("diem").value);
+      let loai = "";
+      if (diem >= 9 && diem <= 10) loai = "Xuất sắc";
+      else if (diem >= 7 && diem < 9) loai = "Khá";
+      else if (diem >= 5 && diem < 7) loai = "Trung bình";
+      else if (diem >= 0 && diem < 5) loai = "Yếu";
+      else loai = "Điểm không hợp lệ";
+      document.getElementById("loai").innerText = loai;
+    }
+  </script>
+</body>
+</html>

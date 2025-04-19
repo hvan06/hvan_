@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài 4</title>
+</head>
+<body>
+    <div>
+        <a href="bai1.html">Bài 1</a> 
+        <a href="bai2.html">Bài 2</a> 
+        <a href="bai3.html">Bài 3</a> 
+        <a href="bai4.html">Bài 4</a>
+        <a href="bai5.html">Bài 5</a>
+        <a href="bai6.html">Bài 6</a>
+        <a href="bai7.html">Bài 7</a>
+        <a href="bai8.html">Bài 8</a>
+        </div>
+        <div>
+  <button onclick="inChan()">In</button>
+  <p id="soChan"></p>
+        </div>
+  <script>
+    function inChan() {
+      let ketQua = [];
+      for (let i = 0; i <= 10; i++) {
+        if (i % 2 === 0) ketQua.push(i);
+      }
+      document.getElementById("soChan").innerText = ketQua.join(", ");
+    }
+  </script>
+</body>
+</html>

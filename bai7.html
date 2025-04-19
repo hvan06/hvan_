@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài 7</title>
+</head>
+<body>
+    <div>
+        <a href="bai1.html">Bài 1</a> 
+        <a href="bai2.html">Bài 2</a> 
+        <a href="bai3.html">Bài 3</a> 
+        <a href="bai4.html">Bài 4</a>
+        <a href="bai5.html">Bài 5</a>
+        <a href="bai6.html">Bài 6</a>
+        <a href="bai7.html">Bài 7</a>
+        <a href="bai8.html">Bài 8</a>
+        </div>
+        <div>
+  <input type="text" id="mang" placeholder="Nhập mảng cách nhau bằng dấu ,">
+  <input type="text" id="phanTu" placeholder="Nhập phần tử cần tìm">
+  <button onclick="xuLyMang()">Xử lý</button>
+  <pre id="ketQuaMang"></pre>
+        </div>
+  <script>
+    function xuLyMang() {
+      let arr = document.getElementById("mang").value.split(",").map(Number);
+      let find = parseInt(document.getElementById("phanTu").value);
+      let output = "";
+
+      output += "a. Mảng: " + arr.join(", ") + "\n";
+      output += "b. Đảo ngược: " + arr.slice().reverse().join(", ") + "\n";
+      output += "c. Sắp xếp tăng dần: " + arr.slice().sort((a, b) => a - b).join(", ") + "\n";
+      output += "d. Các phần tử chẵn: " + arr.filter(x => x % 2 === 0).join(", ") + "\n";
+      
+      let viTri = arr.indexOf(find);
+      if (viTri !== -1) {
+        output += "e. Tìm thấy phần tử tại vị trí: " + viTri;
+      } else {
+        output += "e. Không tìm thấy phần tử.";
+      }
+
+      document.getElementById("ketQuaMang").innerText = output;
+    }
+  </script>
+</body>
+</html>
